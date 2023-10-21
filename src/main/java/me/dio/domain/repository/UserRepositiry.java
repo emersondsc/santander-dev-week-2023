@@ -8,4 +8,5 @@ import me.dio.domain.model.User;
 @Repository
 public interface UserRepositiry extends JpaRepository<User, Long> {
 
-}
+ boolean existsByAccountNumber(String accountNumber);
+ }
